@@ -7,12 +7,18 @@ For IDT (Bottom-up Approach)
 T(N) = (M + K)log(N) < 1sec -> O((M + K)log(N))
 */
 /*
+이진 트리는 항상 머릿 속으로 그림을 그린다.
+
+
 완전 이진 트리로 구성 = heap과 동일
 
 tree size = 2^x > MAXN
 즉, data 12개이면, Leaf 노드 개수 = 2^x = 16개, 공간은 16개 필요
 
 핸들링을 위해 0을 사용하지않음.
+
+left child idx = i * 2;
+right child idx = i * 2 + 1;
 */
 
 
@@ -25,6 +31,7 @@ void initLeaf()
 	// 쓰레기값을 비우는 초기화 꼭 하기
 	for (int i = leaf; i <= 2 * leaf; i++) tree[i] = 0;
 	// for (int i = leaf; i <= 2 * leaf; i++) tree[i] = INF;
+
 	for (int i = leaf; i < leaf + n; i++) cin >> tree[i];
 
 	return;
@@ -48,11 +55,10 @@ void update(int idx, int value)
 	tree[idx] = value;
 
 	// go to parent node & update
-	while (idx > 0)
+	while (idx /= 2)
 	{
-		idx /= 2;
-
 		tree[idx] = tree[idx * 2] + tree[idx * 2 + 1];
+		// tree[idx] = min(tree[idx * 2], tree[idx * 2 + 1]);
 	}
 
 	return;
@@ -71,9 +77,11 @@ int rgSum(int l, int r)
 	{
 		if (r < l) break; // 뒤집힘.
 
-		// 1. 이번 l, r이 각 조건에 해당될 때 값을 취한다.
+		// 1. 이번 l, r이 조상에서 만나지 않을 때 값을 취한다.
 		if (l % 2 == 1) ret += tree[l];
 		if (r % 2 == 0) ret += tree[r];
+		// if (l % 2 == 1) min(ret, tree[l]);
+		// if (r % 2 == 0) min(ret, tree[r]);
 
 		// 2. 크로스 무빙
 		l = (l + 1) / 2;
