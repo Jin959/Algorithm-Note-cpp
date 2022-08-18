@@ -15,14 +15,14 @@ void binarySearch(int arr[], int target)
 		if (r < l)
 		{
 			cout << "target doesn't exist" << endl;
-
-			return;
+			break;
 		}
 
 		// 2. 성공
 		if (arr[mid] == target)
 		{
 			cout << "target idx : " << mid << endl;
+			break;
 		}
 
 		// 3. 구간 갱신
