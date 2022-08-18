@@ -32,8 +32,8 @@ void rotate(int arr[][3])
 	}
 
 
-	for (int i = 0; i < 3; i++)
-		for (int j = 0; j < 3; j++)
-			arr[i][j] = tmp[i][j];
+	for (int y = 0; y < 3; y++)
+		for (int x = 0; x < 3; x++)
+			arr[y][x] = tmp[y][x];
 
 }
