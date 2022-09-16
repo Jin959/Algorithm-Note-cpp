@@ -5,17 +5,17 @@
 -------------------
 
  - cpp reference
-  * [cplusplus](https://cplusplus.com/reference/)
-  * [cppreference](https://en.cppreference.com/w/)
+   * [cplusplus](https://cplusplus.com/reference/)
+   * [cppreference](https://en.cppreference.com/w/)
  - [devdocs](https://devdocs.io/)
  
  - Data Structure and Algorithm and so on..
-  * [geeksforgeeks](https://www.geeksforgeeks.org/)
-  * [수학인듯 과학아닌 공학같은 컴퓨터과학](https://librewiki.net/wiki/시리즈:수학인듯_과학아닌_공학같은_컴퓨터과학/알고리즘_기초)
+   * [geeksforgeeks](https://www.geeksforgeeks.org/)
+   * [수학인듯 과학아닌 공학같은 컴퓨터과학](https://librewiki.net/wiki/시리즈:수학인듯_과학아닌_공학같은_컴퓨터과학/알고리즘_기초)
 
  - visuals
-  * [visualgo](https://visualgo.net/en)
-  * [pathfinding](https://qiao.github.io/PathFinding.js/visual/) - origin for qiao
+   * [visualgo](https://visualgo.net/en)
+   * [pathfinding](https://qiao.github.io/PathFinding.js/visual/) - origin for qiao
 
 
 Thank you to all the masters in the world.
