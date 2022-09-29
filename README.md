@@ -17,7 +17,7 @@
     * [Decision Problem](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Searching/binary_search-decision_problem.cpp)
     * scrap : [이분 탐색(Binary Search) 헷갈리지 않게 구현하기](https://www.acmicpc.net/blog/view/109)
 
-## Graph
+## [Graph](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/)
 
  - DFS
  - BFS
