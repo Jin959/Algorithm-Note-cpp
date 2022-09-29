@@ -10,7 +10,7 @@
 
 - $ex)$ git branch, BlockChain
 
-- 간선으로 연결되지 않은 경우도 있을 수 있다. 각각을 그래프라고 하는 것이 아니라 각 요소를 **그래프 연결요소(Connnected Component)**라고 한다. 이 요소들 모두를 하나의 그래프로 간주한다.
+- 간선으로 연결되지 않은 경우도 있을 수 있다. 각각을 그래프라고 하는 것이 아니라 각 요소를 **그래프 연결요소(Connnected Component)** 라고 한다. 이 요소들 모두를 하나의 그래프로 간주한다.
   > ```mermaid 
   > flowchart LR
   > subgraph 하나의 그래프
@@ -28,7 +28,7 @@
   > end
   > ```
 
-- $cf)$ 간선이 없고 노드 1개만 존재하는 경우 ($E=0, V=1$)
+- $cf)$ 간선이 없고 노드 1개만 존재하는 경우 ( $E=0, V=1$ )
   > ```mermaid
   > graph LR
   >   subgraph graph
@@ -41,7 +41,7 @@
 
   * 연결요소(Connnected Component) : 1개
   
-- $cf)$ 간선도 없고 노드도 없는 경우 ($E=0, V=0$): 그래프로 본다.
+- $cf)$ 간선도 없고 노드도 없는 경우 ( $E=0, V=0$ ): 그래프로 본다.
   > ```
   >              빈 graph = graph
   > 
@@ -58,8 +58,8 @@
 
 | Complexity |인접 행렬|인접 리스트|
 |:-----------:|:--------:|:---------:|
-|공간 복잡도|$\uparrow$|$\downarrow$|
-|탐색 시간 복잡도|$\downarrow$|$\uparrow$|
+|공간 복잡도| $\uparrow$ | $\downarrow$ |
+|탐색 시간 복잡도| $\downarrow$ | $\uparrow$ |
 
 - 인접 행렬은 특정 경로(5 -> 2)를 바로 조회 할 수 있다.
 
@@ -74,9 +74,9 @@
   * 인접행렬에 적힌 모든 칸을 탐색할 경우
 
 - AdjList를 사용 시 : $O(V + E)$
-  * 이때, 
-    $$ if \; V \gg  E \quad \rightarrow \quad O(V + E) \sim O(V)$$
-    $$ if \; V \ll  E \quad \rightarrow \quad O(V + E) \sim O(E)$$
-    따라서 , 도미넌트한 쪽으로 기운다.  
+  * 이때,   
+    $$ if \; V \gg  E \quad \rightarrow \quad O(V + E) \sim O(V)$$  
+    $$ if \; V \ll  E \quad \rightarrow \quad O(V + E) \sim O(E)$$  
+    따라서 , 도미넌트한 쪽으로 기운다.    
 
 - 최단거리를 구할 때는 BFS
