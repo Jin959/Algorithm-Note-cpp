@@ -74,9 +74,9 @@
   * 인접행렬에 적힌 모든 칸을 탐색할 경우
 
 - AdjList를 사용 시 : $O(V + E)$
-  * 이때,   
-    $ if \; V \gg  E \quad \rightarrow \quad O(V + E) \sim O(V)$  
-    $ if \; V \ll  E \quad \rightarrow \quad O(V + E) \sim O(E)$  
-    따라서 , 도미넌트한 쪽으로 기운다.    
-
+  * 이때,  
+    $$ if \quad V \gg  E \quad \rightarrow \quad O(V + E) \sim O(V)$$  
+    $$ if \quad V \ll  E \quad \rightarrow \quad O(V + E) \sim O(E)$$  
+    따라서 , 도미넌트한 쪽으로 기운다.     
+     
 - 최단거리를 구할 때는 BFS
