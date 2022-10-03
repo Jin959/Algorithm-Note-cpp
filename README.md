@@ -28,7 +28,7 @@
    * Prim
 
 ## Data Structure
- - Linked List
+ - [Linked List](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Data_Structure/linked_list.cpp)
  - Heap
  - [Index Tree](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Data_Structure/idx_tree.cpp)
 
@@ -50,6 +50,7 @@
  - cpp reference
    * [cplusplus](https://cplusplus.com/reference/)
    * [cppreference](https://en.cppreference.com/w/)
+   * [모두의 코드](https://modoocode.com/135)
  - [devdocs](https://devdocs.io/)
  
  - Data Structure and Algorithm and so on..
