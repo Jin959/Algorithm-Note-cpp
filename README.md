@@ -21,7 +21,7 @@
 
  - DFS
  - BFS
- - Dijkstra
+ - [Dijkstra](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/dijkstra.cpp)
  - Union-Find
  - MST
    * Kruskal
