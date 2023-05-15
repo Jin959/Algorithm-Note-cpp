@@ -21,11 +21,11 @@
 
  - DFS
  - BFS
- - [Dijkstra](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/dijkstra.cpp)
- - Union-Find
+ - [Union-Find](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/union_find.cpp)
  - MST
-   * Kruskal
+   * [Kruskal](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/mst-kruskal.cpp)
    * Prim
+ - [Dijkstra](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/dijkstra.cpp)
 
 ## Data Structure
  - [Linked List](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Data_Structure/linked_list.cpp)
