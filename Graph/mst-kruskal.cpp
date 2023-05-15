@@ -6,6 +6,7 @@
 *	반대로 "노드의 수가 N 일 때, 간선수 = N - 1 인 그래프" 는 트리이다.
 * - 시간 복잡도 -> O(ElogE)  ,  E: 간선 수
 * - 최소 비용은 유일하지만, 경로는 여러개 존재할 수 있다.
+* - 최소 비용 간선만 택하므로 Greedy 하다.
 *
 * Kruskal 은 간선 비용 순으로
 * Prim 은 노드 순으로
@@ -81,7 +82,7 @@ int main() {
 	return 0;
 }
 
-
+// 1. Union-Find를 구현 함수들 정의
 void init() {
 	for (char i = 'a'; i <= 'z'; i++) {
 		parent[i] = i;
