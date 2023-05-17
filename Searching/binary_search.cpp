@@ -1,5 +1,13 @@
 // 주의 : 정렬된 arr여야 한다.
+/*
+단지 해당되는 값을 찾는 문제이므로 mid = r - 1, mid = l + 1로 Cross Over 시켜 종료시킨다.
+*/
+#include <iostream>
+using namespace std;
 
+int n = 5;
+int arr[]{ 1, 2, 3, 4, 5 };
+int target = 4;
 
 void binarySearch(int arr[], int target)
 {
@@ -12,7 +20,7 @@ void binarySearch(int arr[], int target)
 		int mid = (lb + rb) / 2;
 
 		// 1. 실패
-		if (r < l)
+		if (rb < lb)
 		{
 			cout << "target doesn't exist" << endl;
 			break;

@@ -14,8 +14,10 @@
 ## Searching
 
  - [Binary Search](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Searching/binary_search.cpp)
-    * [Decision Problem](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Searching/binary_search-decision_problem.cpp)
-    * scrap : [이분 탐색(Binary Search) 헷갈리지 않게 구현하기](https://www.acmicpc.net/blog/view/109)
+    * [Decision Problem](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Searching/decision_problem.cpp)
+      - [상세 설명](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Searching/binary_search-decision_problem.cpp)
+      - [정올 - Tutorial : 이진탐색(Binary Search-이진검색)](http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=2857&sca=3010)
+      - scrap : [이분 탐색(Binary Search) 헷갈리지 않게 구현하기](https://www.acmicpc.net/blog/view/109)
 
 ## [Graph](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/)
 
