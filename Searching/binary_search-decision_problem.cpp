@@ -57,7 +57,6 @@ char arr[8 + 1] = "11110000";
 int binarySearch()
 {
 	int lb = 0, rb = sizeof(arr)/sizeof(*arr) - 2; // 문자열의 "\n" 때문에 -2
-	cout << rb << endl;
 	int mid = -2;
 
 	while (1)

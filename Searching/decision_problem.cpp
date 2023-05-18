@@ -1,6 +1,6 @@
 // 주의 : 정렬된 arr여야 한다.
 /*
-결정 문제의 경계를 찾는 경우, "lb == rb" 일때 종료 시킨다.
+결정 문제의 경계 기준 한쪽을 찾는 경우, "lb == rb" 일때 종료 시킨다.
 */
 #include <iostream>
 using namespace std;
