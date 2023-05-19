@@ -48,8 +48,8 @@
 
 - Prefix Sum
 
-  - 1D prefix
-  - 2D prefix
+  - [1D prefix](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Etc/prefix-1d.cpp)
+  - [2D prefix](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Etc/prefix-2d.cpp)
 
 - Sliding Window
 
