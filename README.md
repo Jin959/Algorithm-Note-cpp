@@ -53,7 +53,7 @@
 
 - Sliding Window
 
-- Two Pointers
+- [Two Pointers](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Etc/2pointers.cpp)
 
 ---
 
