@@ -1,22 +1,10 @@
 /*
-* Minimum Spanning Tree
-*
-* - MST 는 트리이다 Cycle이 존재하면 안된다.
-* - 트리에서 경로(Path)는 "Unique" 하다. 이로 인해 트리는 노드의 수가 N 일 때, 간선수 = N - 1 이 된다.
-*	반대로 "노드의 수가 N 일 때, 간선수 = N - 1 인 그래프" 는 트리이다.
-* - 시간 복잡도 -> O(ElogE)  ,  E: 간선 수
-* - 최소 비용은 유일하지만, 경로는 여러개 존재할 수 있다.
-* - 최소 비용 간선만 택하므로 Greedy 하다.
-*
-* Kruskal 은 간선 비용 순으로
-* Prim 은 노드 순으로
-*
 * 그림 : https://blog.naver.com/kks227/220799105543
 * 예제 : https://www.acmicpc.net/problem/1922
 * 
-* acc == 11
+* 이미 연결된 간선들이 존재할 때, 남은 노드를 모두 연결해야 하는데 드는 최소비용.
+* acc == 3
 */
-
 #include <iostream>
 #include <queue>
 
@@ -25,7 +13,6 @@
 
 using namespace std;
 
-// 0. 준비물
 char parent[200];
 
 struct Edge {
@@ -35,7 +22,6 @@ bool operator< (Edge a, Edge b) { // min heap
 	return a.cost > b.cost;
 }
 
-// 1. Union-Find를 구현한다.
 void init();
 char find(char now);
 void unite(char a, char b);
@@ -50,7 +36,13 @@ Edge edge[EDGE] = {
 	{'d', 'e', 7}
 };
 
-// 2. MST 구현
+void makeCycle() {
+	// Cycle 생성
+	unite('b', 'e');
+	unite('e', 'c');
+	unite('c', 'b');
+}
+
 void kruskal() {
 	priority_queue<Edge> pq;
 	int edge_cnt = 0;
@@ -60,41 +52,43 @@ void kruskal() {
 		pq.push({ edge[i].v1, edge[i].v2, edge[i].cost });
 	}
 
-	// Spanning Tree 탐색 및 최소 비용 기록
-	while (1) {
-		if (edge_cnt == NODE - 1) break; // 트리가 완성 되었다.
+	// 트리의 완성으로 종료 시키지 않아야 한다. 여기서는 2번으로 구현한다.
+	// 1. 문제에 따라 간선의 개수, 조건 등을 정확히 하여 if문으로 종료 시킨다. -> 효율적이나, 실수 할 확률이 높음.
+	// 2. 지금과 같이 cycle 이 입력 되어 버린 경우는 모든 간선을 탐색하고 종료 시키는 것이 안전하다.
+	//	이때, 시간은 pq를 탐색하는 만큼 더 걸림.
+	while (!pq.empty()) {
+		// if (edge_cnt == NODE - 1) break; // 또는 문제 조건에 맞는 종료문
 
 		Edge e = pq.top();
 		pq.pop();
 
-		if (find(e.v1) == find(e.v2)) continue; // Cycle 혹은 이미 트리에 연결된 노드, 여기 때문에 경로 압축이 필수이다.
+		if (find(e.v1) == find(e.v2)) continue;
 
-		unite(e.v1, e.v2); // 그렇지 않으면 트리에 연결 하고 비용을 기록한다.
+		unite(e.v1, e.v2);
 		acc += e.cost;
 		edge_cnt++;
 	}
 
-	cout << acc; // acc == 11
+	cout << acc; // acc == 3
 }
 
 int main() {
 	init();
+	makeCycle();
 	kruskal();
 
 	return 0;
 }
 
-// 1. Union-Find를 구현 함수들 정의
 void init() {
 	for (char i = 'a'; i <= 'z'; i++) {
 		parent[i] = i;
 	}
 }
 
-// cycle 검출을 위해 경로 압축이 필수다.
 char find(char now) {
 	if (parent[now] == now) return now;
-	return parent[now] = find(parent[now]); // 재귀 -> 경로 압축 -> 리턴 ; short code
+	return parent[now] = find(parent[now]);
 }
 
 void unite(char a, char b) {

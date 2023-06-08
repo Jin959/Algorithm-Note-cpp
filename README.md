@@ -30,8 +30,10 @@
 - [Union-Find](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/union_find.cpp)
 - MST
   - [Kruskal](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/mst-kruskal.cpp)
+    - [SubTree 를 완성해야 하는 경우](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/mst-kruskal-subtree.cpp)(부분 완성이 됐거나 Cycle 을 포함해도 되는 경우)
   - Prim
 - [Dijkstra](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/dijkstra.cpp)
+  - [SSPS 경로 출력](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/dijkstra-path.cpp#LL39C1-L54C1)
 
 ## Data Structure
 
