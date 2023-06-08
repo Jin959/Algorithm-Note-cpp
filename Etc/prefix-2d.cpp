@@ -3,7 +3,7 @@
 // arr, prefix sum arr 의 idx를 1부터 시작하는게 빠르게 구현할 수 있다.
 // idx가 0부터 이면 out of range / seg fault 에러에 대처해야 하기 때문에 코드가 길어진다.
 
-// http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=2418&sca=3080
+// https://jungol.co.kr/problem/3136
 
 #include <iostream>
 #define MAXN 1'000

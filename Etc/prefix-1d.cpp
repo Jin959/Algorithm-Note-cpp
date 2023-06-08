@@ -1,4 +1,4 @@
-// http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=2417&sca=3080#n
+// https://jungol.co.kr/problem/3135
 
 #include <iostream>
 #define MAXN 1'000'000

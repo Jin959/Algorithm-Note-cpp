@@ -1,7 +1,7 @@
 /*
 * Dijkstra
 *
-* http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=2400&sca=4070
+* https://jungol.co.kr/problem/3118
 *
 * 음의 가중치가 존재하지 않을 때, SSPS
 * start : Node 1
