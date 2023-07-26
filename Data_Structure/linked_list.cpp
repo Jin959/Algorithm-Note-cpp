@@ -30,12 +30,12 @@ struct Node
 	int val;
 	Node* nxt;
 
-	static void PushBack(int v);
+	static void pushBack(int v);
 };
 
 Node* head, * tail;
 
-void Node::PushBack(int v)
+void Node::pushBack(int v)
 {
 	if (head == NULL)
 	{
@@ -51,11 +51,11 @@ void Node::PushBack(int v)
 
 int main()
 {
-	Node::PushBack(12);
-	Node::PushBack(1);
-	Node::PushBack(5);
-	Node::PushBack(789);
-	Node::PushBack(87);
+	Node::pushBack(12);
+	Node::pushBack(1);
+	Node::pushBack(5);
+	Node::pushBack(789);
+	Node::pushBack(87);
 
 	Node* n = head;
 	while (n != NULL)
@@ -64,6 +64,7 @@ int main()
 		if (n != tail) cout << " -> ";
 		n = n->nxt;
 	}
+	// 12 -> 1 -> 5 -> 789 -> 87
 
 	return 0;
 }
