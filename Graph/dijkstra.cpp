@@ -6,6 +6,8 @@
 * 음의 가중치가 존재하지 않을 때, SSPS
 * start : Node 1
 * goal : Node N
+* 
+* 시간 복잡도 : O(ElogV)
 */
 
 #include <iostream>
@@ -47,6 +49,7 @@ void init() {
 		adj[from - 1].push_back({ to - 1, cost });
 	}
 
+	// 0. 초기화
 	fill(dist, dist + n, INF);
 	memset(visited, 0, sizeof(visited));
 }
@@ -54,15 +57,20 @@ void init() {
 int dijkstra() {
 
 	priority_queue<Node> pq;
+	// 0. 시작점 세팅
 	pq.push(start);
+	dist[start.vertex] = 0;		// 주의 : 자주 잊음.
 
 	while (!pq.empty()) {
+		// 1. 노드를 하나 택한다.
 		Node now = pq.top();
 		pq.pop();
 
+		// 2. 방문처리
 		if (visited[now.vertex]) continue;
 		visited[now.vertex] = 1;
 
+		// 3. 우선순위 탐색
 		for (Edge next : adj[now.vertex]) {
 			if (now.acc + next.cost < dist[next.vertex]) { // 중요
 				dist[next.vertex] = now.acc + next.cost;
