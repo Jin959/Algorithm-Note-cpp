@@ -71,6 +71,7 @@ int dijkstra() {
 
 	priority_queue<Node> pq;
 	pq.push(start);
+	dist[start.vertex] = 0;
 
 	while (!pq.empty()) {
 		Node now = pq.top();
