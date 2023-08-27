@@ -34,6 +34,7 @@
     - [SubTree 를 완성해야 하는 경우](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/mst-kruskal-subtree.cpp)(부분 완성이 됐거나 Cycle 을 포함해도 되는 경우)
   - Prim
 - [Dijkstra](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/dijkstra.cpp)
+  - [항상 now node 에서 방문 여부를 체크해야한다.](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/dijkstra.cpp#L69C1-L71C27)
   - [SSPS 경로 출력](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/dijkstra-path.cpp#LL39C1-L54C1)
 
 ## Data Structure
