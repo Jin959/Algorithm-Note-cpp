@@ -4,6 +4,12 @@
 
 ---
 
+## Data Structure
+
+- [Linked List](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Data_Structure/linked_list.cpp)
+- Heap
+- [Index Tree](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Data_Structure/idx_tree.cpp)
+
 ## Sort
 
 - Selection Sort
@@ -11,7 +17,7 @@
 - Merge Sort
 - STL sort
 
-## Searching
+## Binary Search
 
 - [Binary Search](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Searching/binary_search.cpp)
 - Decision Problem
@@ -43,12 +49,6 @@
 
   - [1D prefix](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/DynamicProgramming/prefix-1d.cpp)
   - [2D prefix](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/DynamicProgramming/prefix-2d.cpp)
-
-## Data Structure
-
-- [Linked List](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Data_Structure/linked_list.cpp)
-- Heap
-- [Index Tree](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Data_Structure/idx_tree.cpp)
 
 ## Et cetera
 
