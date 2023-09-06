@@ -37,6 +37,13 @@
   - [항상 now node 에서 방문 여부를 체크해야한다.](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/dijkstra.cpp#L69C1-L71C27)
   - [SSPS 경로 출력](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Graph/dijkstra-path.cpp#LL39C1-L54C1)
 
+## Dynamic Programming
+
+- Prefix Sum
+
+  - [1D prefix](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/DynamicProgramming/prefix-1d.cpp)
+  - [2D prefix](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/DynamicProgramming/prefix-2d.cpp)
+
 ## Data Structure
 
 - [Linked List](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Data_Structure/linked_list.cpp)
@@ -49,11 +56,6 @@
 
   - [2D array rotation-rotation matrix(회전 변환 행렬 사용)](<https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Matrix(Array)_Handling/2d_array_rotation-rotation_matrix.cpp>)
   - [2D array rotation-general method](<https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Matrix(Array)_Handling/2d_array_rotation-general_method.cpp>)
-
-- Prefix Sum
-
-  - [1D prefix](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Etc/prefix-1d.cpp)
-  - [2D prefix](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Etc/prefix-2d.cpp)
 
 - Sliding Window
 

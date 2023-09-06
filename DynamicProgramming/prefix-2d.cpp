@@ -26,7 +26,7 @@ int main() {
 	for (int y = 1; y <= n; y++) {
 		for (int x = 1; x <= n; x++) {
 			cin >> arr[y][x];
-			
+
 			px[y][x] = arr[y][x] + px[y - 1][x] + px[y][x - 1] - px[y - 1][x - 1];
 		}
 	}
