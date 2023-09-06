@@ -39,8 +39,11 @@
 
 ## Dynamic Programming
 
+- [Top-down(Memoization)](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/DynamicProgramming/top-down.cpp)
+- [Bottom-up(Tabulation)](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/DynamicProgramming/bottom-up.cpp)
+- [Coin Change Problem](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/DynamicProgramming/coin-change.cpp)
+- [Knapsack Problem](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/DynamicProgramming/knapsack.cpp)
 - Prefix Sum
-
   - [1D prefix](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/DynamicProgramming/prefix-1d.cpp)
   - [2D prefix](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/DynamicProgramming/prefix-2d.cpp)
 
@@ -52,12 +55,9 @@
 ## Et cetera
 
 - Array(Matrix) Handling
-
   - [2D array rotation-rotation matrix(회전 변환 행렬 사용)](<https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Matrix(Array)_Handling/2d_array_rotation-rotation_matrix.cpp>)
   - [2D array rotation-general method](<https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Matrix(Array)_Handling/2d_array_rotation-general_method.cpp>)
-
 - Sliding Window
-
 - [Two Pointers](https://github.com/Jin959/Algorithm-Note-cpp/blob/main/Etc/2pointers.cpp)
 
 ---
