@@ -3,7 +3,7 @@
 #include <iostream>
 #include <algorithm>
 
-#define MAXN 1000	// 보석, item 개수
+#define MAXN 1000	// 보석, item의 개수
 #define MAXW 10000	// 배낭의 용량
 
 using namespace std;
@@ -27,8 +27,7 @@ int main() {
 	input();
 
 	for (int i = 0; i < n; i++) {
-		DT[item[i].weight] = max(DT[item[i].weight], item[i].value);
-		for (int j = item[i].weight + 1; j <= w; j++) {
+		for (int j = item[i].weight; j <= w; j++) {
 			DT[j] = max(DT[j - item[i].weight] + item[i].value, DT[j]);
 		}
 	}
